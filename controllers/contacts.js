@@ -10,7 +10,8 @@ const getAll = async (req, res, next) => {
 };
 
 const getSingle = async (req, res, next) => {
-    const userId = new ObjectId(req.params.id);
+    const userId = req.params.id;
+
     const result = await mongodb
         .getDb()
         .db()
