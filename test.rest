@@ -42,9 +42,12 @@ POST https://week2personalassignment.herokuapp.com/contact/add HTTP/1.1
 content-type: application/json
 
 {
-    "firstName": "Matthew",
-    "lastName": "James",
-    "email": "matthewj1561@gmail.com",
-    "favoriteColor": "Purple",
+    "firstName": "Bob",
+    "lastName": "Builder",
+    "email": "builderboy@gmail.com",
+    "favoriteColor": "YellowHats",
     "birthday": "07-04-2002"
 }
+
+###
+DELETE https://week2personalassignment.herokuapp.com/contact/6272afe42874f7fa940cce23
