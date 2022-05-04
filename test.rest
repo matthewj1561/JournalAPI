@@ -1,8 +1,8 @@
-GET http://localhost:8080/
+GET http://localhost:8080/contact HTTP/1.1
 
 ###
 
-GET http://localhost:8080/62729dade2c761cf1e0d1d0a
+GET http://localhost:8080/contact/6272ada2ad2fc7cba2c7c12c HTTP/1.1
 
 ###
 POST http://localhost:8080/contact/add HTTP/1.1
@@ -17,13 +17,33 @@ content-type: application/json
 }
 
 ###
-PUT http://localhost:8080/contact/6272a9615ea2e90b07afc417 HTTP/1.1
+PUT http://localhost:8080/contact/6272aadec007bf98260bcf85 HTTP/1.1
 content-type: application/json
 
 {
 
     "firstName": "Jimmy",
     "lastName": "Johns",
+    "email": "matthewj1561@gmail.com",
+    "favoriteColor": "Purple",
+    "birthday": "07-04-2002"
+}
+
+###
+DELETE http://localhost:8080/contact/6272aadec007bf98260bcf85
+
+###
+GET https://week2personalassignment.herokuapp.com/contact
+
+###
+GET https://week2personalassignment.herokuapp.com/contact/6272ada2ad2fc7cba2c7c12c HTTP/1.1
+###
+POST https://week2personalassignment.herokuapp.com/contact/add HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "Matthew",
+    "lastName": "James",
     "email": "matthewj1561@gmail.com",
     "favoriteColor": "Purple",
     "birthday": "07-04-2002"
