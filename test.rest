@@ -1,0 +1,30 @@
+GET http://localhost:8080/
+
+###
+
+GET http://localhost:8080/62729dade2c761cf1e0d1d0a
+
+###
+POST http://localhost:8080/contact/add HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "Matthew",
+    "lastName": "James",
+    "email": "matthewj1561@gmail.com",
+    "favoriteColor": "Purple",
+    "birthday": "07-04-2002"
+}
+
+###
+PUT http://localhost:8080/contact/6272a9615ea2e90b07afc417 HTTP/1.1
+content-type: application/json
+
+{
+
+    "firstName": "Jimmy",
+    "lastName": "Johns",
+    "email": "matthewj1561@gmail.com",
+    "favoriteColor": "Purple",
+    "birthday": "07-04-2002"
+}
