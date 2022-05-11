@@ -1,3 +1,3 @@
 # Lesson 02 
 
-Builds off lesson 1 and allows for two routes
+API with 4 routes. Get all, get one, modify by id, and delete.
