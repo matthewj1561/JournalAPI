@@ -1,4 +1,5 @@
 const express = require('express');
+const swaggerAutogen = require('swagger-autogen')();
 
 // const cors = require('cors');
 const app = express();

@@ -4,6 +4,7 @@
     "description": "code to give to students for the cse341 course",
     "main": "server.js",
     "scripts": {
+        "swagger-autogen": "node ./swagger.js",
         "test": "echo \"Error: no test specified\" && exit 1",
         "start": "nodemon server.js",
         "lint": "eslint .",
@@ -25,13 +26,15 @@
         "dotenv": "^16.0.0",
         "env": "^0.0.2",
         "express": "^4.17.3",
-        "mongodb": "^4.5.0"
+        "mongodb": "^4.5.0",
+        "swagger-ui-express": "^4.3.0"
     },
     "devDependencies": {
         "eslint": "^8.14.0",
         "eslint-config-prettier": "^8.5.0",
         "eslint-plugin-prettier": "^4.0.0",
         "nodemon": "^2.0.15",
-        "prettier": "^2.6.2"
+        "prettier": "^2.6.2",
+        "swagger-autogen": "^2.21.1"
     }
 }
