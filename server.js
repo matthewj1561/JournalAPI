@@ -13,6 +13,7 @@ app.use('/', require('./routes'));
 //     console.log(`Running on port ${port}`);
 // });
 
+//Change
 connect.initDb((err) => {
     if (err) {
         console.log(err);
