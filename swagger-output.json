@@ -1,17 +1,17 @@
 {
     "swagger": "2.0",
     "info": {
-        "title": "My API",
-        "description": "Description",
+        "title": "Journal",
+        "description": "API for modifying a journal application",
         "version": "1.0.0"
     },
-    "host": "week2personalassignment.herokuapp.com",
+    "host": "https://journal1561.herokuapp.com/",
     "basePath": "/",
-    "schemes": ["https"],
+    "schemes": ["https", "http"],
     "paths": {
-        "/contact/": {
+        "/journal/": {
             "get": {
-                "tags": ["Contact"],
+                "tags": ["Journal"],
                 "description": "",
                 "produces": ["application/json"],
                 "parameters": [],
@@ -22,9 +22,9 @@
                 }
             }
         },
-        "/contact/{id}": {
+        "/journal/{id}": {
             "get": {
-                "tags": ["Contact"],
+                "tags": ["Journal"],
                 "description": "",
                 "produces": ["application/json"],
                 "parameters": [
@@ -42,7 +42,7 @@
                 }
             },
             "put": {
-                "tags": ["Contact"],
+                "tags": ["Journal"],
                 "description": "",
                 "parameters": [
                     {
@@ -57,19 +57,22 @@
                         "schema": {
                             "type": "object",
                             "properties": {
-                                "firstName": {
+                                "entryName": {
                                     "example": "any"
                                 },
-                                "lastName": {
+                                "date": {
                                     "example": "any"
                                 },
-                                "email": {
+                                "body": {
                                     "example": "any"
                                 },
-                                "favoriteColor": {
+                                "tags": {
                                     "example": "any"
                                 },
-                                "birthday": {
+                                "backColor": {
+                                    "example": "any"
+                                },
+                                "font": {
                                     "example": "any"
                                 }
                             }
@@ -86,7 +89,7 @@
                 }
             },
             "delete": {
-                "tags": ["Contact"],
+                "tags": ["Journal"],
                 "description": "",
                 "parameters": [
                     {
@@ -106,9 +109,9 @@
                 }
             }
         },
-        "/contact/add": {
+        "/journal/add": {
             "post": {
-                "tags": ["Contact"],
+                "tags": ["Journal"],
                 "description": "",
                 "parameters": [
                     {
@@ -117,19 +120,22 @@
                         "schema": {
                             "type": "object",
                             "properties": {
-                                "firstName": {
+                                "entryName": {
                                     "example": "any"
                                 },
-                                "lastName": {
+                                "date": {
                                     "example": "any"
                                 },
-                                "email": {
+                                "body": {
                                     "example": "any"
                                 },
-                                "favoriteColor": {
+                                "tags": {
                                     "example": "any"
                                 },
-                                "birthday": {
+                                "backColor": {
+                                    "example": "any"
+                                },
+                                "font": {
                                     "example": "any"
                                 }
                             }

@@ -1,53 +1,56 @@
-GET http://localhost:8080/contact HTTP/1.1
+GET http://localhost:8080/journal HTTP/1.1
 
 ###
 
-GET http://localhost:8080/contact/6272ada2ad2fc7cba2c7c12c HTTP/1.1
+GET http://localhost:8080/journal/6272ada2ad2fc7cba2c7c12c HTTP/1.1
 
 ###
-POST http://localhost:8080/contact/add HTTP/1.1
+POST http://localhost:8080/journal/add HTTP/1.1
 content-type: application/json
 
 {
-    "firstName": "Matthew",
-    "lastName": "James",
-    "email": "matthewj1561@gmail.com",
-    "favoriteColor": "Purple",
-    "birthday": "07-04-2002"
+        "entryName": "Happy Fun Times",
+        "date": "5/18/2022",
+        "body": "Today, I ate cake.",
+        "tags": "food",
+        "backColor": "white",
+        "font":"default"
 }
 
 ###
-PUT http://localhost:8080/contact/6272aadec007bf98260bcf85 HTTP/1.1
+PUT http://localhost:8080/journal/628515217e9f698f738a6412 HTTP/1.1
 content-type: application/json
 
 {
 
-    "firstName": "Jimmy",
-    "lastName": "Johns",
-    "email": "matthewj1561@gmail.com",
-    "favoriteColor": "Purple",
-    "birthday": "07-04-2002"
+     "entryName": "Not happy",
+        "date": "5/18/2022",
+        "body": "I ran out of cake",
+        "tags": "food",
+        "backColor": "white",
+        "font":"default"
 }
 
 ###
-DELETE http://localhost:8080/contact/6272aadec007bf98260bcf85
+DELETE http://localhost:8080/journal/628510fa380e3142551db563
 
 ###
-GET https://week2personalassignment.herokuapp.com/contact
+GET https://week2personalassignment.herokuapp.com/journal
 
 ###
-GET https://week2personalassignment.herokuapp.com/contact/6272ada2ad2fc7cba2c7c12c HTTP/1.1
+GET https://week2personalassignment.herokuapp.com/journal/6272ada2ad2fc7cba2c7c12c HTTP/1.1
 ###
-POST https://week2personalassignment.herokuapp.com/contact/add HTTP/1.1
+POST https://week2personalassignment.herokuapp.com/journal/add HTTP/1.1
 content-type: application/json
 
 {
-    "firstName": "Bob",
-    "lastName": "Builder",
-    "email": "builderboy@gmail.com",
-    "favoriteColor": "YellowHats",
-    "birthday": "07-04-2002"
+        "entryName": "Happy Fun Times",
+        "date": "5/18/2022",
+        "body": "Today, I ate cake.",
+        "tags": "food",
+        "backColor": "white",
+        "font":"default"
 }
 
 ###
-DELETE https://week2personalassignment.herokuapp.com/contact/6272afe42874f7fa940cce23
+DELETE https://week2personalassignment.herokuapp.com/journal/6272afe42874f7fa940cce23
