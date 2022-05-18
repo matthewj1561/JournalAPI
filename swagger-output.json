@@ -5,7 +5,7 @@
         "description": "API for modifying a journal application",
         "version": "1.0.0"
     },
-    "host": "https://journal1561.herokuapp.com/",
+    "host": "https://journal1561.herokuapp.com",
     "basePath": "/",
     "schemes": ["https", "http"],
     "paths": {
