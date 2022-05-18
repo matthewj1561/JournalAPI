@@ -1,180 +1,156 @@
 {
-  "swagger": "2.0",
-  "info": {
-    "title": "Journal",
-    "description": "API for modifying a journal application",
-    "version": "1.0.0"
-  },
-  "host": "https://journal1561.herokuapp.com",
-  "basePath": "/",
-  "schemes": [
-    "https",
-    "http"
-  ],
-  "paths": {
-    "/api-docs": {
-      "get": {
-        "description": "",
-        "parameters": [],
-        "responses": {}
-      }
+    "swagger": "2.0",
+    "info": {
+        "title": "Journal",
+        "description": "API for modifying a journal application",
+        "version": "1.0.0"
     },
-    "/journal/": {
-      "get": {
-        "tags": [
-          "Journal"
-        ],
-        "description": "",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
-    "/journal/{id}": {
-      "get": {
-        "tags": [
-          "Journal"
-        ],
-        "description": "",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      },
-      "put": {
-        "tags": [
-          "Journal"
-        ],
-        "description": "",
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "name": "body",
-            "in": "body",
-            "schema": {
-              "type": "object",
-              "properties": {
-                "entryName": {
-                  "example": "any"
-                },
-                "date": {
-                  "example": "any"
-                },
-                "body": {
-                  "example": "any"
-                },
-                "tags": {
-                  "example": "any"
-                },
-                "backColor": {
-                  "example": "any"
-                },
-                "font": {
-                  "example": "any"
+    "host": "journal1561.herokuapp.com",
+    "basePath": "/",
+    "schemes": ["https", "http"],
+    "paths": {
+        "/journal/": {
+            "get": {
+                "tags": ["Journal"],
+                "description": "",
+                "produces": ["application/json"],
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    }
                 }
-              }
             }
-          }
-        ],
-        "responses": {
-          "201": {
-            "description": "Created"
-          },
-          "500": {
-            "description": "Internal Server Error"
-          }
-        }
-      },
-      "delete": {
-        "tags": [
-          "Journal"
-        ],
-        "description": "",
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "204": {
-            "description": "No Content"
-          },
-          "500": {
-            "description": "Internal Server Error"
-          }
-        }
-      }
-    },
-    "/journal/add": {
-      "post": {
-        "tags": [
-          "Journal"
-        ],
-        "description": "",
-        "parameters": [
-          {
-            "name": "body",
-            "in": "body",
-            "schema": {
-              "type": "object",
-              "properties": {
-                "entryName": {
-                  "example": "any"
-                },
-                "date": {
-                  "example": "any"
-                },
-                "body": {
-                  "example": "any"
-                },
-                "tags": {
-                  "example": "any"
-                },
-                "backColor": {
-                  "example": "any"
-                },
-                "font": {
-                  "example": "any"
+        },
+        "/journal/{id}": {
+            "get": {
+                "tags": ["Journal"],
+                "description": "",
+                "produces": ["application/json"],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    }
                 }
-              }
+            },
+            "put": {
+                "tags": ["Journal"],
+                "description": "",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "entryName": {
+                                    "example": "any"
+                                },
+                                "date": {
+                                    "example": "any"
+                                },
+                                "body": {
+                                    "example": "any"
+                                },
+                                "tags": {
+                                    "example": "any"
+                                },
+                                "backColor": {
+                                    "example": "any"
+                                },
+                                "font": {
+                                    "example": "any"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "201": {
+                        "description": "Created"
+                    },
+                    "500": {
+                        "description": "Internal Server Error"
+                    }
+                }
+            },
+            "delete": {
+                "tags": ["Journal"],
+                "description": "",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "204": {
+                        "description": "No Content"
+                    },
+                    "500": {
+                        "description": "Internal Server Error"
+                    }
+                }
             }
-          }
-        ],
-        "responses": {
-          "201": {
-            "description": "Created"
-          },
-          "500": {
-            "description": "Internal Server Error"
-          }
+        },
+        "/journal/add": {
+            "post": {
+                "tags": ["Journal"],
+                "description": "",
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "entryName": {
+                                    "example": "any"
+                                },
+                                "date": {
+                                    "example": "any"
+                                },
+                                "body": {
+                                    "example": "any"
+                                },
+                                "tags": {
+                                    "example": "any"
+                                },
+                                "backColor": {
+                                    "example": "any"
+                                },
+                                "font": {
+                                    "example": "any"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "201": {
+                        "description": "Created"
+                    },
+                    "500": {
+                        "description": "Internal Server Error"
+                    }
+                }
+            }
         }
-      }
     }
-  }
 }
