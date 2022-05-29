@@ -18,6 +18,18 @@ content-type: application/json
 }
 
 ###
+POST http://localhost:8080/user/add HTTP/1.1
+content-type: application/json
+
+{
+        "entryName": "Happy Fun Times",
+        "date": "5/18/2022",
+        "body": "Today, I ate cake.",
+        "tags": "food",
+        "backColor": "white",
+        "font":"default"
+}
+###
 PUT http://localhost:8080/journal/628515217e9f698f738a6412 HTTP/1.1
 content-type: application/json
 

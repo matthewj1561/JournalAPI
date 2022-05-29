@@ -7,5 +7,6 @@ router.use('/api-docs', swaggerUi.serve);
 router.get('/api-docs', swaggerUi.setup(swaggerDocument));
 
 router.use('/journal', require('./journal'));
+router.use('/user', require('./user'));
 
 module.exports = router;

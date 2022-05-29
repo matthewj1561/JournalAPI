@@ -26,6 +26,7 @@
         "dotenv": "^16.0.0",
         "env": "^0.0.2",
         "express": "^4.17.3",
+        "joi-password-complexity": "^5.1.0",
         "mongodb": "^4.5.0",
         "swagger-ui-express": "^4.3.0"
     },

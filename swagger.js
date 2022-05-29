@@ -6,6 +6,7 @@ const doc = {
         description: 'API for modifying a journal application'
     },
     host: 'journal1561.herokuapp.com',
+    // host: 'localhost:8080',
     schemes: ['https', 'http']
 };
 
