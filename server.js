@@ -19,9 +19,9 @@ const config = {
 // app.use(cors());
 app.use(express.json());
 app.use(auth(config));
-// app.get('/', (req, res) => {
-//     res.send(req.oidc.isAuthenticated() ? 'Logged in' : 'Logged out');
-// });
+app.get('/', (req, res) => {
+    res.send(req.oidc.isAuthenticated() ? 'Logged in' : 'Logged out');
+});
 
 app.get('/profile', requiresAuth(), (req, res) => {
     res.send(JSON.stringify(req.oidc.user));
