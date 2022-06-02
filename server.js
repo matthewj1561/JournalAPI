@@ -19,18 +19,14 @@ const config = {
 // app.use(cors());
 app.use(express.json());
 app.use(auth(config));
-app.get('/', (req, res) => {
-    res.send(req.oidc.isAuthenticated() ? 'Logged in' : 'Logged out');
-});
+// app.get('/', (req, res) => {
+//     res.send(req.oidc.isAuthenticated() ? 'Logged in' : 'Logged out');
+// });
 
 app.get('/profile', requiresAuth(), (req, res) => {
     res.send(JSON.stringify(req.oidc.user));
 });
 app.use('/', requiresAuth(), require('./routes'));
-
-// app.listen(port, () => {
-//     console.log(`Running on port ${port}`);
-// });
 
 //Change
 connect.initDb((err) => {
