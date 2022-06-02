@@ -26,7 +26,7 @@ app.use(auth(config));
 app.get('/profile', requiresAuth(), (req, res) => {
     res.send(JSON.stringify(req.oidc.user));
 });
-app.use('/', require('./routes'));
+app.use('/', requiresAuth(), require('./routes'));
 
 //Change
 connect.initDb((err) => {
